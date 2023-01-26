@@ -5,10 +5,10 @@ int range = 10;
 
 // aklsdaskdjasd'jsa'djaslkdjaslkdjasdklsa
 void main() {
-  actionModel(userMoney, userMin);
+  actionModel(userMoney);
 }
 
-void actionModel(int userActionValue, int userActionMin) {
+void actionModel(int userActionValue, {int userActionMin = 14}) {
   if (userActionValue > userActionMin) {
     double functionValueNew = secondFunction();
     print('$functionValueNew you are excused :)');
