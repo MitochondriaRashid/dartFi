@@ -18,9 +18,19 @@ class Bazzarrix extends Windows {
   late String bazText;
   Bazzarrix(this.bazNum, this.bazText, String field, int number)
       : super(field, number);
+
+  @override
+  void wriTer() {
+    print('Rashid');
+  }
 }
 
 void main() {
+  // MyClassA();
+  MyclassB();
+}
+
+void MyClassA() {
   print('Please enter data count:');
   int userInputCount = int.parse(stdin.readLineSync()!);
 
@@ -34,4 +44,9 @@ void main() {
     print(
         'Result: ' + myClassA.windowsCalculator(userInputString, userInputInt));
   }
+}
+
+void MyclassB() {
+  Bazzarrix myClassB = Bazzarrix(10, 'rashid', 'as', 50);
+  myClassB.wriTer();
 }
