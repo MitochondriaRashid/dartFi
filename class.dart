@@ -93,17 +93,15 @@ class Badamli extends CocaCola {
   String taste = 'Bitter';
 }
 
+class Students {
+  late int no;
+  late String stName;
+  late int stClass;
+
+  Students(this.no, this.stName, this.stClass);
+}
+
 void main() {
-  // Atreides asca = Atreides(5, 4, 3, 2);
-  // print(asca.numSum);
-
-  // Animals elephant = Elephant();
-  // Animals tiger = Tiger();
-  // var alligator = Alligator();
-
-  // print(alligator.crocodyles(elephant));
-  // alligator.crocodyles(tiger);
-
   var cocaCola = CocaCola();
   var badamli = Badamli();
   Foodable pepsiCola = CocaCola();
@@ -114,5 +112,4 @@ void main() {
   print(badamli.salt);
   print(pepsiCola.taste);
   print(badamli.a);
-
 }
